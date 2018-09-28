@@ -20,11 +20,12 @@ def play(songs)
   input = gets.chomp 
   if songs.include?(input)
     puts input 
+    return
   elsif Integer(input.to_i) && (input.to_i - 1) < songs.length
     puts songs[(input.to_i) - 1]
-  else
-    puts "Invalid input, please try again"
+    return
   end 
+  puts "Invalid input, please try again"
 end 
 
 def list(songs)
