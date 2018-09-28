@@ -19,7 +19,7 @@ def play(songs)
   # puts "Enter a song name or number: "
   input = gets.chomp 
   if songs.include?(input)
-    puts songs.include?(input) 
+    puts input 
     return
   elsif input.match(/^(\d)+$/) && (input.to_i - 1) < songs.length
     puts songs[(input.to_i) - 1]
