@@ -10,3 +10,31 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
+def help
+  options = ['help', 'list', 'play', 'run', 'exit'] 
+  options.each { |opt| puts opt}
+end 
+
+def play(songs)
+  # puts "Enter a song name or number: "
+  input = gets.chomp 
+  if songs.include?(input)
+    puts input 
+  elsif Integer(input.to_i) && (input.to_i - 1) < songs.length
+    puts songs[(input.to_i) - 1]
+  else 
+    puts "Invalid input, please try again"
+  end 
+  
+  # if songs.include?(songs)
+  #   return songs
+  # elsif Number(songs.to_i)
+  #   return songs[songs.to_i]  
+  # else 
+  #   raise "Invalid input, please try again"
+  # end 
+end 
+
+def list(songs)
+  puts songs
+end 
