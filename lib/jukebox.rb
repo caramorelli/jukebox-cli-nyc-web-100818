@@ -25,14 +25,6 @@ def play(songs)
   else 
     puts "Invalid input, please try again"
   end 
-  
-  # if songs.include?(songs)
-  #   return songs
-  # elsif Number(songs.to_i)
-  #   return songs[songs.to_i]  
-  # else 
-  #   raise "Invalid input, please try again"
-  # end 
 end 
 
 def list(songs)
