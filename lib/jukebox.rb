@@ -45,5 +45,5 @@ def run(songs)
   when 'list'
     list(songs)
   when 'play'
-    play
+    play(songs)
 end 
