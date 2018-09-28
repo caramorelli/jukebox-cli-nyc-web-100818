@@ -21,7 +21,7 @@ def play(songs)
   if songs.include?(input)
     puts songs.include?(input) 
     return
-  elsif Integer(input.to_i) && (input.to_i - 1) < songs.length
+  elsif input.is_a() && (input.to_i - 1) < songs.length
     puts songs[(input.to_i) - 1]
     return
   end 
