@@ -21,7 +21,7 @@ def play(songs)
   if songs.include?(input)
     puts songs.include?(input) 
     return
-  elsif input.is_an_integer? && (input.to_i - 1) < songs.length
+  elsif input.match(/^(\d)+$/) && (input.to_i - 1) < songs.length
     puts songs[(input.to_i) - 1]
     return
   end 
