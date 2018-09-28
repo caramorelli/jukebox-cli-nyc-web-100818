@@ -39,4 +39,9 @@ end
 def run(songs)
   puts "Please enter a command:"
   input = gets.chomp
+  case input 
+  when 'help'
+    help 
+  when 'list'
+    list
 end 
