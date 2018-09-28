@@ -31,3 +31,6 @@ end
 def list(songs)
   puts songs
 end 
+
+def exit_jukebox
+end 
