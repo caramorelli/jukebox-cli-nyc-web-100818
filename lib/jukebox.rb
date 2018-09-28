@@ -22,7 +22,7 @@ def play(songs)
     puts input 
   elsif Integer(input.to_i) && (input.to_i - 1) < songs.length
     puts songs[(input.to_i) - 1]
-  else 
+  else
     puts "Invalid input, please try again"
   end 
 end 
